@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":1.09843111038208,"y":-1.2042025327682496,"z":-0.06201171875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":3.7233996391296388,"orthographic":true}
+=======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-2.170365333557129,"y":-0.44135433435440066,"z":-0.05628445744514465},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":10.308842658996582,"orthographic":true}
+>>>>>>> origin/dev
