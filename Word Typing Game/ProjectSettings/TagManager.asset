@@ -38,6 +38,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 1012196063
+    locked: 0
+  - name: castle
+    uniqueID: 1619117731
+    locked: 0
+  - name: meteor
+    uniqueID: 2247202933
+    locked: 0
+  - name: laser
+    uniqueID: 3377514959
+    locked: 0
+  - name: words
+    uniqueID: 3611916237
+    locked: 0
+  - name: gun
+    uniqueID: 3172043915
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

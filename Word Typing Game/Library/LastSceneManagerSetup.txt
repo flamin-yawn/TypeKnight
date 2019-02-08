@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/main.unity
+- path: C:/Users/veech/Desktop/code/homework/typing game - William/Word Typing Game/Assets/main.unity
   isLoaded: 1
   isActive: 1
