@@ -93,3 +93,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 8566037747890080184}
+  fallSpeed: 1
+  meteor: {fileID: 1687413696568299895}
