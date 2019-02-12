@@ -13,5 +13,6 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         SceneManager.LoadScene(0);
+        ScoreScript.scoreValue = 0;
     }
 }
