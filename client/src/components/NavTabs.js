@@ -23,7 +23,7 @@ const NavTabs = () => (
         About
       </Link>
     </li>
-    <li className="nav-item">
+    {/* <li className="nav-item"> */}
       {/* <Link
         to="/blog"
         className={
@@ -52,7 +52,7 @@ const NavTabs = () => (
       >
         Learn
       </Link> */}
-    </li>
+    {/* </li> */}
   </ul>
 );
 

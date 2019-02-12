@@ -1,6 +1,8 @@
 import React from "react";
 
 const Home = () => (
+
+
   <div className="webgl-content">
   <div id="gameContainer" ></div>
   <div className="footer">
