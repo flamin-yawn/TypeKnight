@@ -21,6 +21,7 @@ public class WordDisplay : MonoBehaviour
 
     public void RemoveWord ()
     {
+        ScoreScript.scoreValue += 5;
         Destroy(gameObject);
     }
 
