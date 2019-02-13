@@ -8,6 +8,8 @@ public class laser : MonoBehaviour
 
     private LineRenderer lineRenderer;
     public Transform laserTip;
+    Rigidbody2D meteorite;
+    public GameObject meteor;
 
     // Start is called before the first frame update
     void Start()
@@ -17,13 +19,15 @@ public class laser : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.enabled = false;
         lineRenderer.useWorldSpace = true;
+        meteorite = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        meteor = GameObject.FindGameObjectWithTag("activeWord");
         // uses raycast to draw the laser pointing up
-        RaycastHit2D tag = Physics2D.Raycast(transform.position, transform.up);
+        RaycastHit2D tag = Physics2D.Raycast(transform.position, meteor.transform.position);
         //draw a line to test laser path
         Debug.DrawLine(transform.position, tag.point);
         //sets the laser end to where ever the ray touches a physics object
