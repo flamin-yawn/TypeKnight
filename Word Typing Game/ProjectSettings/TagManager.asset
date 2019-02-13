@@ -9,6 +9,7 @@ TagManager:
   - castle
   - ground
   - gun
+  - activeWord
   layers:
   - Default
   - TransparentFX
