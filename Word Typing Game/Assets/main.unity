@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 214667796}
   - component: {fileID: 214667795}
   - component: {fileID: 214667794}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: castleLeft
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -891,7 +891,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1175,7 +1175,7 @@ GameObject:
   - component: {fileID: 602006632}
   - component: {fileID: 602006631}
   - component: {fileID: 602006630}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: castleTop
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -1521,6 +1521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserTip: {fileID: 1294020414}
+  meteor: {fileID: 4224446403218374976, guid: f8adbb251d1c0a44a92cb19147d1e891, type: 3}
 --- !u!4 &749103127
 Transform:
   m_ObjectHideFlags: 0
@@ -1529,7 +1530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749103125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.81, y: -2.85, z: 0}
+  m_LocalPosition: {x: -0.01, y: -4.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1550,9 +1551,9 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 1
-  m_RendererPriority: 0
+  m_RendererPriority: 1
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1590,6 +1591,24 @@ LineRenderer:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.49474078
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1597,7 +1616,7 @@ LineRenderer:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 0, a: 1}
       key1: {r: 1, g: 0, b: 0.78431374, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1613,7 +1632,7 @@ LineRenderer:
       ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 0
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0
@@ -1625,11 +1644,11 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 3
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1
-  m_Loop: 0
+  m_Loop: 1
 --- !u!1 &947659142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,9 +1843,9 @@ GameObject:
   - component: {fileID: 1177758998}
   - component: {fileID: 1177758997}
   - component: {fileID: 1177758996}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: gun
-  m_TagString: gun
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1988,7 +2007,7 @@ GameObject:
   - component: {fileID: 1591506606}
   - component: {fileID: 1591506605}
   - component: {fileID: 1591506604}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: castleRight
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -2090,7 +2109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1804834373}
   - component: {fileID: 1804834372}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: castle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2322,7 +2341,7 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using System;
+
 public class laser : MonoBehaviour
 {
     // lineRender is the beam, laserPoint is the end of the laser
@@ -25,9 +27,11 @@ public class laser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        meteor = GameObject.FindGameObjectWithTag("activeWord");
+        meteor = GameObject.FindGameObjectWithTag("target");
+        var target = meteor.transform.position;
+        Console.WriteLine(meteor.transform.position);
         // uses raycast to draw the laser pointing up
-        RaycastHit2D tag = Physics2D.Raycast(transform.position, meteor.transform.position);
+        RaycastHit2D tag = Physics2D.Raycast(transform.position, target);
         //draw a line to test laser path
         Debug.DrawLine(transform.position, tag.point);
         //sets the laser end to where ever the ray touches a physics object
@@ -37,7 +41,7 @@ public class laser : MonoBehaviour
         //set end point for laser
         lineRenderer.SetPosition(1, laserTip.position);
         // FIRE THE LASER!
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.anyKey)
         {
             lineRenderer.enabled = true;
         }

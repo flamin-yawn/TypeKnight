@@ -25,7 +25,6 @@ public class WordManager : MonoBehaviour
         {
             if (activeWord.GetNextLetter() == letter)
             {
-                gameObject.tag = "activeWord";
                 activeWord.TypeLetter();
             }
         }
@@ -36,6 +35,7 @@ public class WordManager : MonoBehaviour
                 if (word.GetNextLetter() == letter)
                 {
                     activeWord = word;
+                    tag = "target";
                     hasActiveWord = true;
                     word.TypeLetter();
                     break;
