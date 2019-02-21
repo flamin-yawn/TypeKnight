@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class meteorKiller : MonoBehaviour
 {
+    public WordDisplay WordDisplay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +18,19 @@ public class meteorKiller : MonoBehaviour
         
     }
 
+    // void OnCollisionEnter2D(Collision2D objectYouCollidedWith) { your_code}
+
+    //void onCollisionEnter2D(Collision2D gameObject.tag == "castle")
+ 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "laser" )
         {
-            // increase score - included in WordDisplay.RemoveWord();
+            WordDisplay.RemoveWord();
         }
-        else if (collision.gameObject.tag == "castle")
+        if (collision.gameObject.tag == "castle")
         {
-            // destroy castle
+            Destroy(gameObject);
         }
         else if (collision.gameObject.tag == "gun")
         {

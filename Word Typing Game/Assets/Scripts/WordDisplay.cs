@@ -7,7 +7,7 @@ public class WordDisplay : MonoBehaviour
 {
     public Text text;
     public float fallSpeed = 1f;
-    // public Vector3 target = transform.position;
+    // public Vector3 target = text.position;
 
     public void SetWord (string word)
     {

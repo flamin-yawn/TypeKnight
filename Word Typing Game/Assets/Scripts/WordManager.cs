@@ -7,8 +7,10 @@ public class WordManager : MonoBehaviour
     public List<Word> words;
 
     public WordSpawner wordSpawner;
-
+    // public Transform target;
+    // public Transform Word;
     private bool hasActiveWord;
+    // private bool target;
     private Word activeWord;
 
     public void AddWord ()
@@ -35,7 +37,8 @@ public class WordManager : MonoBehaviour
                 if (word.GetNextLetter() == letter)
                 {
                     activeWord = word;
-                    tag = "target";
+                    // target = true;
+                    // target.position = Word.position;
                     hasActiveWord = true;
                     word.TypeLetter();
                     break;
@@ -43,9 +46,15 @@ public class WordManager : MonoBehaviour
             }
         }
 
+        // if (target)
+        // {
+            // Word.tag = "target";
+        // }
+
         if (hasActiveWord && activeWord.WordTyped())
         {
             hasActiveWord = false;
+            // target = false;
             words.Remove(activeWord);
         }
     }

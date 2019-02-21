@@ -11,7 +11,6 @@ public class WordInput : MonoBehaviour
     {
         foreach (char letter in Input.inputString)
         {
-
             wordManager.TypeLetter(letter);
 
         }

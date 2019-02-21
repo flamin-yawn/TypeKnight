@@ -7,6 +7,8 @@ MonoImporter:
   - laserTip: {instanceID: 0}
   - meteor: {fileID: 1687413696568299895, guid: 2fee599d262e06e4080c2b087da9d543,
       type: 3}
+  - MeteorPos: {fileID: 4224446403218374980, guid: f8adbb251d1c0a44a92cb19147d1e891,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
