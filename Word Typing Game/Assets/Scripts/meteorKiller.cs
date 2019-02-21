@@ -13,7 +13,13 @@ public class meteorKiller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //void OnCollisionEnter2D (collision2D col)
+        //{
+        //    if (collision.gameObject.tag == "activeWord")
+        //    {
+        //        Destroy(gameObject); 
+        //    }
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
