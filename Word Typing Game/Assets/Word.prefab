@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7107337060121411308}
   - component: {fileID: 8566037747890080184}
   - component: {fileID: 1687206407189320534}
+  - component: {fileID: 3440757826905241642}
   m_Layer: 5
   m_Name: Word
   m_TagString: meteor
@@ -95,6 +96,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 8566037747890080184}
   fallSpeed: 1
+--- !u!114 &3440757826905241642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687413696568299895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31e4fef406776847924bfd89fd51411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6406263848733206640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -161,6 +174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065858122068959159, guid: f8adbb251d1c0a44a92cb19147d1e891,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.070685856
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8adbb251d1c0a44a92cb19147d1e891, type: 3}

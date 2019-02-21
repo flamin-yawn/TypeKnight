@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using System;
+
 public class laser : MonoBehaviour
 {
     // lineRender is the beam, laserPoint is the end of the laser
@@ -9,7 +11,9 @@ public class laser : MonoBehaviour
     private LineRenderer lineRenderer;
     public Transform laserTip;
     Rigidbody2D meteorite;
-    public GameObject meteor;
+    // public GameObject meteor;
+    // public Transform MeteorPos;
+    // public Transform target;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +23,21 @@ public class laser : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.enabled = false;
         lineRenderer.useWorldSpace = true;
-        meteorite = GetComponent<Rigidbody2D>();
+        // meteorite = GetComponent<Rigidbody2D>();
+        // target.position = WordManager.Word.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        meteor = GameObject.FindGameObjectWithTag("activeWord");
+        // player = GameObject.FindGameObjectWithTag("Player");
+        // meteor.position = target.position;
+        // meteor = GameObject.FindGameObjectWithTag("target");
+        // MeteorPos.transform.position = meteor.transform.position;
+        // var target = GameObject.FindGameObjectWithTag("meteor").transform.position;
+        // Console.WriteLine(meteor.transform.position);
         // uses raycast to draw the laser pointing up
-        RaycastHit2D tag = Physics2D.Raycast(transform.position, meteor.transform.position);
+        RaycastHit2D tag = Physics2D.Raycast(transform.position, transform.up);
         //draw a line to test laser path
         Debug.DrawLine(transform.position, tag.point);
         //sets the laser end to where ever the ray touches a physics object
@@ -37,7 +47,7 @@ public class laser : MonoBehaviour
         //set end point for laser
         lineRenderer.SetPosition(1, laserTip.position);
         // FIRE THE LASER!
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.anyKey)
         {
             lineRenderer.enabled = true;
         }
